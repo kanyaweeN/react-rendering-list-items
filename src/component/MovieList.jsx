@@ -3,7 +3,7 @@ import movies from "../data/movies";
 function MovieList() {
     return (
         movies.map((item) =>
-            <div className="max-w bg-white shadow-lg rounded-xl p-4 m-5 flex space-x-4">
+            <div key={item.title} className="max-w bg-white shadow-lg rounded-xl p-4 m-5 flex space-x-4">
                 <img
                     src={item.image}
                     alt={item.title}
